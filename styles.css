@@ -199,7 +199,7 @@ label {
 
 .featured-head{
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 .tile-cont{
@@ -241,6 +241,20 @@ label {
     background-image: url("./Products/CJoggers.webp") ;
 }
 
+.C1{
+    background-image: url("./Products/BSCASUAL.jpg") ;
+}
+.C2{
+    background-image: url("./Products/formal.jpg") ;
+}
+.C3{
+    background-image: url("./Products/casual.jpg") ;
+}
+
+.C4{
+    background-image: url("./Products/sports.jpeg") ;
+}
+
 .product-img{
 
     border: 1.5px solid var(--dark-blue);
@@ -254,7 +268,6 @@ label {
     width: 100%;
 }
 
-
 .price-tag{
     font-size: x-large;
     color: var(--dark-skin);
@@ -266,6 +279,121 @@ label {
     background-repeat: no-repeat;
   
     transition: all .3s ease-in-out;
+}
+
+.cart-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: .1px solid var(--dark-blue);
+
+    border-left: 0;
+    border-right: 0;
+    transition: all .3s ease-in-out;
+
+}
+
+
+.cart-prods-cont{
+    flex: 3;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.subtotal-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding:  3rem 1rem 3rem 1rem;
+    height: max-content;
+    flex: 1;
+    border: .1px solid var(--dark-blue);
+    gap: 2rem;
+}
+
+.cart-price{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--dark-blue);
+}
+
+.cart-price span{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.prod-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 2rem;
+}
+
+.prod-details-div{
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.cart-prod-name{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart-prod-stock{
+    margin-top: -2px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: green;
+}
+
+.cart-prod-category{
+    margin-top: -2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.cart-prod-category span{
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.delete-btn{
+    background-color: var(--dark-blue);
+    color: var(--light-skin);
+    border: .2px solid var(--dark-skin);
+    transition: all .3s ease-in-out;
+    padding: .2rem .8rem .2rem .8rem;
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+    background-color: var(--light-skin);
+    color: var(--dark-blue);
+    
+}
+
+.pay-btn{
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: max-content;
+}
+
+#quantity{
+    background-color: var(--dark-blue);
+    color: var(--dark-skin);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid var(--dark-blue);
+    width: 7rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    /* text-align: center; */
 }
 
 @media screen and (min-width: 768px) {
@@ -288,28 +416,36 @@ label {
       }
   }
 
+  /* for small screen */
   
 @media screen and (max-width: 765px) {
-    
-        .login-sign-side-image{
-            display: none;
-        }   
-        .navReponsive {
-            height: 0;
-            overflow: hidden;
-            transition: height 1s ease-in;
-            display: flex;
-            flex-direction: column;
-            
-        }
-        .hamburger-icon{
+    .cart-product{
+        flex-direction: column;
+    }
+    .cart-container{
+        flex-direction: column-reverse;
 
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            /* width: 100px; */
-        }
+        align-items: center;
+    }
+    .login-sign-side-image{
+        display: none;
+    }   
+    .navReponsive {
+        height: 0;
+        overflow: hidden;
+        transition: height 1s ease-in;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hamburger-icon{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* width: 100px; */
+    }
         
   }
 

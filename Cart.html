@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a02392f97a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- main nav bar -->
+    <nav class=" d-flex flex-md-row flex-column w-100 p-4 justify-content-between">
+        <!-- Logo of brand -->
+        <div class="child logo d-flex flex-row align-items-center justify-content-center">
+            <img class="" src="./logo.svg" alt="">
+            <a style="text-decoration: none; color: rgb(0, 0, 55)" href="./index.html"><p class="m-0 ml-3 font-weight-bold ">Dress Code</p></a>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
+        </div>
+        <div class="child navReponsive d-flex d-flex-column d-none flex-md-row align-items-center">
+            <div class="d-flex flex-column flex-md-row nav-center-button">
+                <a href="./index.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                    <div class="home d-flex  flex-row align-items-center justify-content-center">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="m-0">Home</p>
+                    </div>
+                </a>
+                <a href="./Cart.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                    <div class="cart d-flex flex-row align-items-center justify-content-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="m-0">Cart</p>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="navReponsive d-flex d-flex-column d-none flex-md-row align-items-center">
+                <div class="d-flex flex-column flex-md-row justify-content-between nav-last-btns">
+                    <a href="./login.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                        <div class="login d-flex flex-row">
+                            <i class="fa-solid fa-right-to-bracket m-1"></i>
+                            <p class="m-0">Login</p>
+                        </div>
+                    </a>
+                    <a href="./Signup.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                        <div class="register">
+                            <p class="m-0 pl-2">Register</p>
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+    <!-- main nav bar end -->
+
+    <!-- main body -->
+    <div class="d-flex flex-md-row w-100 cart-container justify-content-center">
+        <!-- Product Div -->
+        <div class="cart-prods-cont" >
+            <h1 class="featured-head m-0">Shopping Cart</h1>
+            <div class="d-flex flex-column cart-products">
+                <div class="cart-product">
+                    <div class="d-flex flex-row justify-content-center back-common prod-tile1 prod-image">
+                    </div>
+                    <div class="d-flex flex-column prod-details-div">
+                        <p class="m-0 cart-prod-name">Dark Grey Blazer</p>
+                        <p class="m-0 cart-prod-stock" >In Stock</p>
+                        <p class="m-0 cart-prod-category">Category: <span>Business Casual</span></p>
+                        <div class="quantity-dropdown">
+                            <select name="quantity" id="quantity">
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                                <option value="4">Qty: 4</option>
+                                <option value="5">Qty: 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="delete-btn">Delete</div>
+                    </div>
+                </div>
+                <div class="cart-product">
+                    <div class="d-flex flex-row justify-content-center back-common prod-tile2 prod-image">
+                    </div>
+                    <div class="d-flex flex-column prod-details-div">
+                        <p class="m-0 cart-prod-name">Faux Seude Jacket</p>
+                        <p class="m-0 cart-prod-stock" >In Stock</p>
+                        <p class="m-0 cart-prod-category">Category: <span>Business Casual</span></p>
+                        <div class="quantity-dropdown">
+                            <select name="quantity" id="quantity">
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                                <option value="4">Qty: 4</option>
+                                <option value="5">Qty: 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="delete-btn">Delete</div>
+                    </div>
+                </div>
+                <div class="cart-product">
+                    <div class="d-flex flex-row justify-content-center back-common prod-tile3 prod-image">
+                    </div>
+                    <div class="d-flex flex-column prod-details-div">
+                        <p class="m-0 cart-prod-name">
+                            Denim Jacket</p>
+                        <p class="m-0 cart-prod-stock" >In Stock</p>
+                        <p class="m-0 cart-prod-category">Category: <span>Business Casual</span></p>
+                        <div class="quantity-dropdown">
+                            <select name="quantity" id="quantity">
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                                <option value="4">Qty: 4</option>
+                                <option value="5">Qty: 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="delete-btn">Delete</div>
+                    </div>
+                </div>
+                <div class="cart-product">
+                    <div class="d-flex flex-row justify-content-center back-common prod-tile4 prod-image">
+                    </div>
+                    <div class="d-flex flex-column prod-details-div">
+                        <p class="m-0 cart-prod-name">Cargo Joggers</p>
+                        <p class="m-0 cart-prod-stock" >In Stock</p>
+                        <p class="m-0 cart-prod-category">Category: <span>Business Casual</span></p>
+                        <div class="quantity-dropdown">
+                            <select name="quantity" id="quantity">
+                                <option value="1">Qty: 1</option>
+                                <option value="2">Qty: 2</option>
+                                <option value="3">Qty: 3</option>
+                                <option value="4">Qty: 4</option>
+                                <option value="5">Qty: 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="delete-btn">Delete</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Product Div End -->
+        <!-- Subtotal Div -->
+        <div class="subtotal-cont">
+            <p class="cart-price">Subtotal (6 Items): &nbsp;&nbsp; <span>Rs. 4821</span></p>
+            <a style="text-decoration: none;" href="./checkout.html"><div class="delete-btn pay-btn">Proceed to Pay</div></a>
+        </div>
+
+    </div>
+    <div class="margin-setter"></div>
+
+    <!-- fOOTER -->
+    <DIv class="footer d-flex flex-md-row flex-column position-absolute w-100 justify-content-center align-items-center">
+        <div>
+            <p>
+                Dress Code
+            </p>
+            <p class="foot-subhead">
+                About Us
+            </p>
+            <p class="foot-subhead">
+                Contact Us
+            </p>
+            <p class="foot-subhead">
+                Terms and Conditions
+            </p>
+        </div>
+        <div>
+            <p>
+                Social Media Links
+            </p>
+            <p class="foot-subhead">
+                Facebook
+            </p>
+            <p class="foot-subhead">
+                Instagram
+            </p>
+            <p class="foot-subhead">
+                Twitter
+            </p>
+        </div>
+    </DIv>
+</body>
+</html>
