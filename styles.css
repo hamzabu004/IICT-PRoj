@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --light-skin : #e3c086;
+    --dark-skin : #e6aa4a;
+    --dark-blue: #031d24;
+}
+
+html
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+    
+}
+nav{
+    font-size: 1.5rem;
+    color: var(dark-blue);
+}
+
+
+    /* Hiding the checkbox default styling */
+    .hamburger-icon input[type="checkbox"] {
+      appearance: none;
+}
+
+
+.logo{
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+}
+.logo > img{
+    width: 50px;
+
+}
+
+.logo button{
+    margin-left: auto;
+}
+
+
+
+.nav-center-button  div, .nav-last-btns div{
+    gap: .5rem;
+}
+
+
+
+.nav-center-button div:hover, .nav-last-btns div:hover{
+color: var(--dark-skin);
+cursor: pointer;
+}
+
+.image-container{
+    height: 90vh;
+}
+.foot-subhead{
+    font-size: 1.3rem;
+}
+.margin-setter{
+    margin-bottom: 20rem;
+}
+.footer{
+    background-color: var(--dark-blue);
+    color: var(--dark-skin);
+    font-size: 2rem;
+    font-weight: 200;
+    gap: 30%;
+    padding: 2rem 0rem 0 0rem;
+}
+
+.login-sign-side-image > img{
+    width: 400px; 
+    /* position: relative;
+    left: -75px; */
+}
+
+.login-sign-side-image{
+    /* width: 500px;
+    text-align: center;
+    overflow: hidden; */
+}
+
+.log-sign-container {
+    max-width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.log-sign-form-container > p{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.log-sign-form-container {
+    padding: 1rem 4rem 1rem 4rem;
+    border: 2px solid var(--dark-blue);
+}
+/* .log-form div{
+    flex-basis: 100%;
+} */
+
+.hamburger-icon {
+    width: 40px;
+    height: 42px;
+    border: 1.5px solid var(--dark-blue);
+    background-color: unset;
+    color: var(--dark-skin);
+    border-radius: 4px;
+    /* box-sizing: border-box;
+    padding-top: .6rem; */
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+  }
+  
+  nav:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display:none;
+  }
+  nav:has(.hamburger-icon input[type="checkbox"]:checked)  .navReponsive{
+    height: fit-content;
+  }
+
+/* Showing the cross icon on checkbox checked state */
+  nav:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display:inline-block;
+    /* padding: 1px        ; */
+  }
+  .hamburger-icon {
+    display: block;
+  }
+
+/* Initially hiding the cross icon */
+.fa-x{
+    display:none;
+}
+
+label {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.login-signup-btn{
+    background-color: var(--dark-blue);
+    color: var(--light-skin);
+    border: 2px solid var(--dark-skin);
+    transition: all .3s ease-in-out;
+    padding: .2rem;
+    font-weight: 500;
+}
+
+.login-signup-btn:hover{
+    background-color: var(--dark-skin);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+}
+
+.input-general{
+    outline: none;
+    /* width: 100%; */
+    padding: .2rem;
+    padding-left: 2rem;
+    border: 2px solid var(--dark-blue);
+    border-radius: 1px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.input-general:focus{
+    border: 2px solid var(--dark-skin);
+    
+}
+.icon{
+    position: relative;
+    top: 1.5rem;
+    left: .4rem;
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+    width: min-content;
+}
+.input-general:focus-within + .icon{
+   
+    font-size: .9rem;
+    color: var(--dark-skin);
+}
+/* Fetaured An other Cat */
+
+.Category{
+    margin-top: 3rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-head{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.tile-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  
+    width: 24rem;
+    
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+    font-size: 2.5rem;
+}
+.product-tile:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.prod-tile1{
+    background-image: url("./Products/blazer.jpg") ;
+}
+.prod-tile2{
+    background-image: url("./Products/FSJacket.webp") ;
+}
+.prod-tile3{
+    background-image: url("./Products/DJacket.webp") ;
+}
+.prod-tile4{
+    background-image: url("./Products/CJoggers.webp") ;
+}
+
+.product-img{
+
+    border: 1.5px solid var(--dark-blue);
+    
+    border-radius: 1px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: var(--dark-blue);
+    color: var(--light-skin);
+    height: 26rem;
+    width: 100%;
+}
+
+
+.price-tag{
+    font-size: x-large;
+    color: var(--dark-skin);
+}
+
+.back-common{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-center-button{
+        margin-right: auto;
+    }
+    .nav-center-button , .nav-last-btns{
+        gap: 1rem;
+    }
+    .hamburger-icon{
+        display:none;
+        border:none;
+        background-color:transparent;
+    }
+    .nav-last-btns{
+        margin-top: .2rem;
+    }
+    .child{
+        flex: 1;
+      }
+  }
+
+  
+@media screen and (max-width: 765px) {
+    
+        .login-sign-side-image{
+            display: none;
+        }   
+        .navReponsive {
+            height: 0;
+            overflow: hidden;
+            transition: height 1s ease-in;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .hamburger-icon{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* width: 100px; */
+        }
+        
+  }
+
