@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a02392f97a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- main nav bar -->
+    <nav class=" d-flex flex-md-row flex-column w-100 p-4 justify-content-between">
+        <!-- Logo of brand -->
+        <div class="child logo d-flex flex-row align-items-center justify-content-center">
+            <img class="" src="./logo.svg" alt="">
+            <a style="text-decoration: none; color: rgb(0, 0, 55)" href="./index.html"><p class="m-0 ml-3 font-weight-bold ">Dress Code</p></a>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
+        </div>
+        <div class="child navReponsive d-flex d-flex-column d-none flex-md-row align-items-center">
+            <div class="d-flex flex-column flex-md-row nav-center-button">
+                <a href="./index.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                    <div class="home d-flex  flex-row align-items-center justify-content-center">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="m-0">Home</p>
+                    </div>
+                </a>
+                <a href="./Cart.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                    <div class="cart d-flex flex-row align-items-center justify-content-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="m-0">Cart</p>
+                    </div>
+                </a>
+            </div>
+       
+            <div class="navReponsive d-flex d-flex-column d-none flex-md-row align-items-center">
+                <div class="d-flex flex-column flex-md-row justify-content-between nav-last-btns">
+                    <a href="./login.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                        <div class="login d-flex flex-row">
+                            <i class="fa-solid fa-right-to-bracket m-1"></i>
+                            <p class="m-0">Login</p>
+                        </div>
+                    </a>
+                    <a href="./Signup.html" style="text-decoration: none; color: rgb(0, 5, 35);">
+                        <div class="register">
+                            <p class="m-0 pl-2">Register</p>
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+    <!-- main nav bar end -->
+
+    <!-- main body -->
+    <div class="checkout-grid">
+        <div class="personal-details">
+            <h1>Personal Details</h1>
+            <h3 class="m-0">Name: <span>Mike Ross</span></h3>
+            <h3 class="m-0">Phone Number: <span>+123456789</span></h3>
+            <h3 class="m-0">Address: <span>221B Baker Street, Newyork</span></h3>
+        </div>
+        <div class="payment-details">
+            <h1 class="">Payment Details</h1>
+            <div class="d-flex flex-column ">
+                <div class="form-check d-flex flex-row align-items-center">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Paypal
+                    </label>
+                  </div>
+                  <div class="form-check d-flex flex-row align-items-center">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    Credit Card
+                    </label>
+                  </div>
+                  <div class="form-check d-flex flex-row align-items-center">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      COD
+                    </label>
+                  </div>
+              </div>
+              
+        </div>
+        <div class="order-summary">
+            <h1>Summary</h1>
+            <div class="item-price d-flex flex-row align-items-center">
+                <p class="m-0">Total Item Cost: </p>
+                <h4 class="">Rs 48221</h4>
+            </div>
+            <div class="item-price d-flex flex-row align-items-center">
+                <p class="m-0">Total GST: </p>
+                <h4 class="justify-self-end">Rs 4000</h4>
+            </div>
+            <div class="item-price d-flex flex-row align-items-center">
+                <p class="m-0">Total Shipping</p>
+                <h4 class="justify-self-end">Rs 1000</h4>
+            </div>
+            <hr>
+            <div class="item-price d-flex flex-row align-items-center">
+                <p class="m-0">Total</p>
+                <h4 class="justify-self-end">Rs 53221</h4>
+            </div>
+            <div class="delete-btn pay-now-btn">Place Order</div>
+        </div>    
+    </div>
+    <div class="margin-setter"></div>
+
+    <!-- fOOTER -->
+    <DIv class="footer d-flex flex-md-row flex-column position-absolute w-100 justify-content-center align-items-center">
+        <div>
+            <p>
+                Dress Code
+            </p>
+            <p class="foot-subhead">
+                About Us
+            </p>
+            <p class="foot-subhead">
+                Contact Us
+            </p>
+            <p class="foot-subhead">
+                Terms and Conditions
+            </p>
+        </div>
+        <div>
+            <p>
+                Social Media Links
+            </p>
+            <p class="foot-subhead">
+                Facebook
+            </p>
+            <p class="foot-subhead">
+                Instagram
+            </p>
+            <p class="foot-subhead">
+                Twitter
+            </p>
+        </div>
+    </DIv>
+</body>
+</html>
